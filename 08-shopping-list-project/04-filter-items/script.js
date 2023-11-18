@@ -65,22 +65,27 @@ function clearItems() {
 
 
 function filterItems(e){
-const text = e.target.value;
-console.log (text); 
+  const items = itemList.querySelectorAll('li');
+const text = e.target.value.toLowerCase();
 
+
+console.log (text); 
+items.foreach((items) => {
+const itemName = item.firstChild
 
 }
 
+};
+console.log(itemName);
 
 function checkUI(){
+  const items = itemList.querySelectorAll('li');
 if (items.length === 0) {
 clearBtn.style.display ='none';
 itemFilter.style.display='none';
 } else{
 clearBtn.style.display='block';
 itemFilter.style.display='block';
-
-
 }
 }
 
@@ -93,3 +98,5 @@ itemFilter.addEventListener('input', filterItems);
 
 
 checkUI();
+
+console.log(removeItem);
