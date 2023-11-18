@@ -209,5 +209,5 @@ itemFilter.addEventListener('input',filterItems );
 document.addEventListener('DOMContentLoaded',displayItems );
 
 }
-
+checkUI();
 
