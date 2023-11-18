@@ -205,8 +205,8 @@ function init(){
 itemForm.addEventListener('submit', onAddItemSubmit );
 itemList.addEventListener('click', onClickItem );
 ClearBtn.addEventListener('click', clearItems );
-.addEventListener('', );
-.addEventListener('', );
+itemFilter.addEventListener('input',filterItems );
+document.addEventListener('DOMContentLoaded',displayItems );
 
 }
 
