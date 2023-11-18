@@ -98,7 +98,7 @@ return itemsFromStorage;
 }
  
 function onClickItem(e) {
-if (e.target.parenElement.classList.contains('remove-item')){
+if (e.target.parenElement.classList.contains('remove-item'))
   removeItem(e.target.parenElement.parenElement);
 
 } else {
